@@ -1,11 +1,9 @@
 import Item from "./item"
 
-const arr = ["吃飯", "睡覺", "打咚咚"]
-
-const List = () => {
-  return <div>
+const List = ({ listData }) => {
+  return <div className="list">
     {
-      arr.map((item) => <div>{item}</div>)
+      listData.map(item => <Item key={item}/>)
     }
   </div>
 }
