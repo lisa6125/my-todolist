@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="app">
       <Edit add={setData} />
-      <List listData={data} />
+      <List listData={data} deletData={setData}/>
     </div>
   );
 };
