@@ -8,8 +8,8 @@ const Home = () => {
   const [data,setData] = useState(['測試1','測試2','測試3'])
 
   return <div className="app">
-    <Edit />
-    <List listData = { data }/>
+    <Edit add={ setData }/>
+    <List listData={ data }/>
   </div>
 }
 export default Home
