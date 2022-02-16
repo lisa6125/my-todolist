@@ -15,7 +15,11 @@ const Edit = ({ add }) => {
   }
 
   function addItem() {
-    add(['改變傳入的data'])
+    add(function (pre) {
+      return [{
+        note,date,time
+      },...pre]
+    })
   }
 
 

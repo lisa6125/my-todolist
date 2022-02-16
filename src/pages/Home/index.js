@@ -5,7 +5,7 @@ import List from "./components/List"
 import './index.css'
 
 const Home = () => {
-  const [data,setData] = useState(['測試1','測試2','測試3'])
+  const [data,setData] = useState([])
 
   return <div className="app">
     <Edit add={ setData }/>
