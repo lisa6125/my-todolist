@@ -6,8 +6,11 @@ import "./index.css";
 
 const Home = () => {
   const [data, setData] = useState([]);
+  // useEffect 外的 function 是每次執行會做的事情，內的是在渲染完成後，在下一次渲染前會做的事情
   useEffect(() => {
-    window.alert('新增成功')
+    return () => {
+      
+    }
   },[data])
   return (
     <div className="app">
