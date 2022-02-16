@@ -1,0 +1,1 @@
+export const API_GET_DATA = "http://localhost:3000/posts/1"
