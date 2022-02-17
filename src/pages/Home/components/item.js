@@ -1,8 +1,9 @@
-const Item = ({ id,note, date, time, deletData }) => {
+const Item = ({ id,note, date, time, deletData,submittingSatus }) => {
   function deleteItem() {
     deletData(function (pre) {
       return pre.filter(item => item.id !== id)
     })
+    submittingSatus.current = true
   }
   return (
     <div className="item">

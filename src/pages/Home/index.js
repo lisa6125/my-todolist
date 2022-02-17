@@ -32,12 +32,15 @@ const Home = () => {
       return
     }
     fetchSetData(data)
+      .then(() => {
+      submittingSatus.current = false
+    })
   }, [data])
 
   return (
     <div className="app">
-      <Edit add={setData} />
-      <List listData={data} deletData={setData}/>
+      <Edit add={setData} submittingSatus={submittingSatus}/>
+      <List listData={data} deletData={setData} submittingSatus={submittingSatus}/>
     </div>
   );
 };
